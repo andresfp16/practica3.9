@@ -2,10 +2,32 @@
 
 ## EC2
 Lanzaremos una instancia EC2.
+Le pondremos la siguiente configuración:
+
+La imagen del SO sera un Ubuntu Server 18.04.
+
+![img](img/ec2creada1.png)
+
+ Contará con una arquitectura de t2.micro y crearemos un par de claves de inicio de sesión.
+
+![img](img/ec2creada2.png)
+
+Asignaremos una IP elastica.
+
+![img](img/ec2ipelastica1.png)
+
+Asociamos la IP elastica.
+
+![img](img/ec2ipelastica2.png)
+
+Creamos el grupo de seguridad con las siguientes reglas de entradas.
+
+![img](img/ec2grupodeseguridad.png)
+
 
 ## RDS
 Lanzaremos una instancia RDS.
-Le pondremos la siguiente configuración
+Le pondremos la siguiente configuración:
 Tendrá un motor MySql y el tamaño será el que nos ofrece la capa gratuita, que en este caso es una t3.micro que tiene 2 CPUs y 1Gb de RAM.
 
 También tendrá practica3-9 como nombre y el usuario maestro será admin. La contraseña que le pondremos sera Root1234$ que es la indicada en la práctica.
