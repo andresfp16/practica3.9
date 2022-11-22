@@ -22,3 +22,9 @@ El ounto de enlace es practica3-9.c1wspstddav2.us-east-1.rds.amazonaws.com y lo 
 
 ## S3
 Lanzamos una instancia S3.
+Le haremos las siguientes modificaciones al crearla:
+
+Le ponemos la región de AWS más cercana, la propiedad de objetos la habilitamos, y por último desmarcamos la casilla para bloquear el acceso público (desbloqueamos el acceso público).
+
+![img](img/s3creada1.png)
+![img](img/s3creada2.png)
