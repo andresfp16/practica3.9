@@ -87,3 +87,6 @@ Una vez hechas las 3 máquinas necesarias haremos lo siguiente:
 
 -> Conectar la máquina EC2 con la máquina RDS
 
+1º Introducimos el siguiente codigo y no nos funciona.
+
+* `mysql -h practica39.c1wspstddav2.us-east-1.rds.amazonaws.com -P 3306 -u admin -p`
