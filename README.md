@@ -46,7 +46,29 @@ El ounto de enlace es practica3-9.c1wspstddav2.us-east-1.rds.amazonaws.com y lo 
 Lanzamos una instancia S3.
 Le haremos las siguientes modificaciones al crearla:
 
-Le ponemos la región de AWS más cercana, la propiedad de objetos la habilitamos, y por último desmarcamos la casilla para bloquear el acceso público (desbloqueamos el acceso público).
+Le ponemos la región de AWS asiganada por defecto, la propiedad de objetos la habilitamos, y por último desmarcamos la casilla para bloquear el acceso público (desbloqueamos el acceso público).
 
 ![img](img/s3creada1.png)
 ![img](img/s3creada2.png)
+
+Cargamos los objetos en la pestaña de Objetos de la instancia de S3.
+
+![img](img/s3archivos.png)
+
+## Conexión
+Una vez hechas las 3 máquinas necesarias haremos lo siguiente:
+
+1º Nos conectamos por comando ssh a la instancia EC2
+
+![img](img/conexionConexionEC2.png)
+
+2º Lanzaremos los siguientes comandos:
+
+2.1º Estos comandos los usaremos para actualizar la máquina e instalar apache.
+* `sudo apt update`
+* `sudo apt install apache2`
+* `sudo systemctl status apache2`
+
+2.2º Ahora con estos comandos importamos los archivos que hay en la máquina S3 a la máquina EC2.
+* `cd /var/www/html/`
+* `sudo apt install awscli`
