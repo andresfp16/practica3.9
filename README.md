@@ -58,9 +58,15 @@ Cargamos los objetos en la pestaña de Objetos de la instancia de S3.
 ## Conexión
 Una vez hechas las 3 máquinas necesarias haremos lo siguiente:
 
+-> Conectar la máquina EC2 con la máquina S3
+
 1º Nos conectamos por comando ssh a la instancia EC2
 
 ![img](img/conexionConexionEC2.png)
+
+1.2º Modificar los roles de la instancia para poder conectar con S3
+
+![img](/img/ec2ModificarAMI.png)
 
 2º Lanzaremos los siguientes comandos:
 
@@ -72,3 +78,12 @@ Una vez hechas las 3 máquinas necesarias haremos lo siguiente:
 2.2º Ahora con estos comandos importamos los archivos que hay en la máquina S3 a la máquina EC2.
 * `cd /var/www/html/`
 * `sudo apt install awscli`
+
+2.3º Descargamos los archivos de la máquina S3 con el siguiente comando.
+* `sudo aws s3 sync s3://practica333 /var/www/html`
+
+2.4º Ahora borraremos el index que viene predefinido en la ruta /var/www/html/
+* `sudo rm /var/www/html/index.html`
+
+-> Conectar la máquina EC2 con la máquina RDS
+
