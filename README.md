@@ -66,7 +66,7 @@ Una vez hechas las 3 máquinas necesarias haremos lo siguiente:
 
 1.2º Modificar los roles de la instancia para poder conectar con S3
 
-![img](/img/ec2ModificarAMI.png)
+![img](img/ec2ModificarAMI.png)
 
 2º Lanzaremos los siguientes comandos:
 
