@@ -93,3 +93,14 @@ Una vez hechas las 3 máquinas necesarias haremos lo siguiente:
 
 3.2º Modificamos nuestro archivo con los parametros de RDS en la ruta.
 * `sudo nano /var/www/html/config.php`
+
+4º Configuraremos la RDS.
+
+4.1º Cambiamos la regla de entrada para poder conectarnos con mysql workbench y poner introducir el sql.
+![img](img/rdsreglasSeguridad.png)
+
+4.2º Añadimos el sql tras conectar conmysql workbench.
+![img](img/rdsWorkbench.png)
+
+4.3º Cambiamos las reglas de seguridad para poder conectar con la ec2.
+![img](img/rdsreglasSeguridadEc2.png)
