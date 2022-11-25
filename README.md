@@ -1,4 +1,5 @@
 # Práctica 3.9: Despliegue web con bases de datos en AWS. Nivel básico.
+# Realizado por Victor Fernandez, Pablo Merida y Andres Rodriguez.
 
 ## EC2
 Lanzaremos una instancia EC2.
@@ -84,3 +85,11 @@ Una vez hechas las 3 máquinas necesarias haremos lo siguiente:
 
 2.4º Ahora borraremos el index que viene predefinido en la ruta /var/www/html/
 * `sudo rm /var/www/html/index.html`
+
+3ª Instalaremos PHP
+
+3.1º  Estos comandos los usaremos para instalar php.
+* `sudo apt install php libapache2-mod-php php-mysql`
+
+3.2º Modificamos nuestro archivo con los parametros de RDS en la ruta.
+* `sudo nano /var/www/html/config.php`
